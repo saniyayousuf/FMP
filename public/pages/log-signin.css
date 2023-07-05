@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5 !important ;
+}
+.conatiner{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  
+}
+.forms{
+    padding: 30px;
+
+}
+.title{
+    position: relative;
+    font-size: 1.2em;
+    font-weight: 600;
+
+}
+.title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #071e55;
+    border-radius: 25px;
+
+}
+.input-field{
+      position: relative;
+    height:50px;
+    width: 100%;
+    margin-top: 30px;
+
+}
+
+.input-field input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: a11 0.2s ease;
+
+}
+
+.input-field input:is(:focus , :valid ){
+    border-bottom-color:#071e55;
+
+}
+
+.input-field i{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+color: #999;
+font-size: 23px;
+}
+
+
+.input-field input:is(:focus , :valid ) ~ i {
+    color:#071e55;
+    
+}
+.input-field i.icon{
+    left: 0;
+    
+}
+.input-field i.shoeHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+
+.form .checkbox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+
+}
+
+.checkbox .checkbox-content{
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.checkbox-content input{
+    accent-color: #071e50;
+    margin: 0px 8px -2xp 4px;
+}
+
+.form .text{
+    color: #333;
+    font-size: 14px;
+
+}
+.form a.text{
+    color: #071e55;
+    text-decoration: none;
+
+}
+.form a:hover{
+    text-decoration: underline;
+    
+}
+/* .form .button{
+    margin-top: 35px;
+
+} */
+/* .form .button  button{
+    border: none;
+    background-color: #071e55;
+    color: #ffffff;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    font-size:17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease ;
+}
+
+
+.button  button:hover{
+
+    background-color: #265df2;
+
+} */
+.form button{
+    height: 55px;
+    width: 90%;
+    margin-left: 5%;
+    background-color:  #071e55;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 500;
+    border: none;
+    margin-top: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+
+}
+
+.form button:hover{
+    background-color:#2BD2FF;
+
+
+}
+.form .login-signup{
+    margin-top: 30px !important;
+    text-align: center;
+    
+}
